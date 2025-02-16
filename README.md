@@ -22,6 +22,12 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
+## Installation
+```sh
+git clone https://github.com/matsahm/docker-gpio-test.git
+cd docker-gpio-test
+```
+
 ## Ausführen
-Im Vordergrund: `docker compose up`
-Im Hintergrund: `docker compose up -d`
+- Im Vordergrund: `docker compose up`
+- Im Hintergrund: `docker compose up -d`
