@@ -1,0 +1,14 @@
+services:
+  raspberry-gpio:
+    build: .
+    image: raspberry-gpio
+    devices:
+      - /dev/gpiomem
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /app
+    volumes:
+      - '/sys/class/gpio:/sys/class/gpio'
+    privileged: true
