@@ -14,6 +14,9 @@ Docker Container um GPIO-Kontakte zu testen.
 - GPIO 1/7 → Taster
 - Taster → GND vom Raspberry Pi
 
+Schaltplan:
+![Steckplatine](docker-gpio-test_Steckplatine.png?raw=true "Steckplatine")
+
 ## Docker installieren
 ```sh
 curl -fsSL https://get.Docker.com -o get-Docker.sh
