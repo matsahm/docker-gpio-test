@@ -15,10 +15,12 @@ Docker Container um GPIO-Kontakte zu testen.
 - Taster → GND vom Raspberry Pi
 
 ## Docker installieren
+```sh
 curl -fsSL https://get.Docker.com -o get-Docker.sh
 sudo sh get-Docker.sh
 sudo usermod -aG docker $USER
 newgrp docker
+```
 
 ## Ausführen
 Im Vordergrund: `docker compose up`
